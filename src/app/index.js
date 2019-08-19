@@ -20,13 +20,14 @@ import Navigation from './Navigation';
 import CreateProduct from './CreateProduct';
 import ProductList from './ProductList';
 
-
+import Landing from './Landing';
 
 function App() {
     return (
       <div className="App">
         <Router>
           <Navigation/>
+          <Route path="/" exact component={Landing} />
           <Route path="/list" exact component={ProductList} />
           <Route path="/create" component={CreateProduct} />
         </Router>
